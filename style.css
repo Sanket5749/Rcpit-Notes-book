@@ -3,8 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-h1 {
+h3{
+  color: red;
+  animation: h3-animation 10s linear infinite;
+}
+h1{
   color: yellow;
 }
 
@@ -29,7 +32,7 @@ nav .logo img {
 }
 
 main {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +94,14 @@ main {
   }
   100% {
     background-position: 300px 0;
+  }
+}
+@keyframes h3-animation {
+  0%{
+    color: #f0f2f5;
+  }
+  100%{
+    color: red;
   }
 }
 footer {
